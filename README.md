@@ -3,5 +3,5 @@
 First Unity Game
 
 -Unity Version 2022.3.13
--Game Design: joelfgalarza97@gmail.com
+-Game Design/Developer: joelfgalarza97@gmail.com
 -Sprites: ale07roldan@outlook.es
