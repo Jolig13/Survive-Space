@@ -6,7 +6,7 @@ public class rayShootScript : MonoBehaviour
 {
     private Rigidbody2D rayRb;
     [SerializeField] private float raySpeed;
-   
+    [SerializeField] private ParticleSystem destroyFX;
     void Start()
     {
         rayRb=GetComponent<Rigidbody2D>();
@@ -22,10 +22,12 @@ public class rayShootScript : MonoBehaviour
         if (collider.gameObject.CompareTag("Asteroid"))
         {
             Destroy(collider.gameObject);
+            Instantiate(destroyFX,transform.position,Quaternion.identity);
         }
         if (collider.gameObject.CompareTag("Meteor"))
         {
             Destroy(collider.gameObject);
+             Instantiate(destroyFX,transform.position,Quaternion.identity);
         }
         if (collider.gameObject.layer==LayerMask.NameToLayer("shootLimit"))
         {

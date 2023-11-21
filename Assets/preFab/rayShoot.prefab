@@ -172,3 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raySpeed: 25
+  destroyFX: {fileID: 7568731560152693112, guid: 8d9a36ffce9534944a6dd4646c2df6f1, type: 3}

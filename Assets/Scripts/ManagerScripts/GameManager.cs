@@ -35,8 +35,4 @@ public class GameManager : MonoBehaviour
             highScore.text=score.ToString("0");
         }
     }
-    public void GameOver()
-    {
-        SceneManager.LoadScene("GameOverScene");
-    }
 }

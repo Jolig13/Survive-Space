@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {   
@@ -10,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb2d;
     [SerializeField] private float addSpeed;
     [SerializeField] private float timeSpeed;
+    [SerializeField] private float gameoverDelay;
+    [SerializeField] private ParticleSystem deathFX;
     void Start()
     {
         rb2d=GetComponent<Rigidbody2D>();
@@ -26,6 +30,23 @@ public class PlayerMove : MonoBehaviour
         rb2d.velocity=playerMove*speedMove*Time.deltaTime;
         GameManager.Instance.Score();
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Meteor"))
+        {
+            Destroy(collision.gameObject);
+            gameObject.SetActive(false);
+            Instantiate(deathFX,transform.position,Quaternion.identity);
+            Invoke("GameOver",gameoverDelay);
+        }   
+        if (collision.gameObject.CompareTag("Asteroid"))
+        {
+            Destroy(collision.gameObject);
+            gameObject.SetActive(false);
+            Instantiate(deathFX,transform.position,Quaternion.identity);
+            Invoke("GameOver",gameoverDelay);
+        }   
+    }
     private void OnTriggerEnter2D(Collider2D trigger2D) 
     {
         if (trigger2D.gameObject.CompareTag("SpeedUp"))
@@ -39,5 +60,9 @@ public class PlayerMove : MonoBehaviour
         speedMove+=addSpeed;
         yield return new WaitForSeconds(timeSpeed);
         speedMove+=addSpeed/timeSpeed;
+    }
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOverScene");
     }
 }

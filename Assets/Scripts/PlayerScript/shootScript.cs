@@ -6,6 +6,7 @@ public class shootScript : MonoBehaviour
 {
     private Rigidbody2D bulletRB;
     [SerializeField] private float shootForce;
+    [SerializeField] private ParticleSystem destroyFX;
     void Start()
     {
         bulletRB=GetComponent<Rigidbody2D>(); 
@@ -20,6 +21,7 @@ public class shootScript : MonoBehaviour
         {
             Destroy(collision.gameObject);   
             Destroy(this.gameObject);
+            Instantiate(destroyFX,transform.position,Quaternion.identity);
         }
         if (collision.gameObject.layer==LayerMask.NameToLayer("shootLimit"))
         {

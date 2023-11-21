@@ -16,12 +16,6 @@ public class asteoroidScript : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other) 
     {
-        if (other.gameObject.CompareTag("Player"))
-        {   
-            Destroy(other.gameObject);
-            Destroy(this.gameObject);
-            GameManager.Instance.GameOver();
-        }
         if (other.gameObject.layer==LayerMask.NameToLayer("limitMap"))
         {
             Destroy(this.gameObject);
