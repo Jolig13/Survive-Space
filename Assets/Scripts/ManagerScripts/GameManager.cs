@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
     private float score;
-    [SerializeField] private TextMeshProUGUI totalScore;
+    [SerializeField] private TextMeshProUGUI actualScore;
     [SerializeField] private TextMeshProUGUI highScore;
     private void Awake() 
     {
@@ -16,18 +16,16 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
-        }
+        } 
     }
-    public void Start() 
+    private void Start() 
     {
-        highScore.text = PlayerPrefs.GetInt("highScore",0).ToString();
+        highScore.text=PlayerPrefs.GetInt("highScore",0).ToString();
     }
     public void Score()
-    {
+    {   
         score += 1*Time.deltaTime;
-
-        totalScore.text = ((int)score).ToString();
-
+        actualScore.text = ((int)score).ToString();
         if (score > PlayerPrefs.GetInt("hihgScore",0))
         {
             PlayerPrefs.SetInt("highScore",(int)score);
