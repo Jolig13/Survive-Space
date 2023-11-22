@@ -8,6 +8,6 @@ public class cameraScript : MonoBehaviour
     [SerializeField] private float speedCamera;
     void Update()
     {
-        transform.position+=new Vector3(speedCamera*Time.deltaTime,0,0);
+        transform.position+=new Vector3(speedCamera*Time.deltaTime,0,0); 
     }
 }

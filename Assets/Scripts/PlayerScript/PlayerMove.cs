@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float timeSpeed;
     [SerializeField] private float gameoverDelay;
     [SerializeField] private ParticleSystem deathFX;
+    [SerializeField] private GameObject GameOverPanel;
     void Start()
     {
         rb2d=GetComponent<Rigidbody2D>();
@@ -61,6 +62,6 @@ public class PlayerMove : MonoBehaviour
     }
     public void GameOver()
     {
-        SceneManager.LoadScene("GameOverScene");
+        GameOverPanel.SetActive(true);
     }
 }

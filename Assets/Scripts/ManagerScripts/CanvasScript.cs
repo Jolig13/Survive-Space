@@ -7,6 +7,7 @@ public class CanvasScript : MonoBehaviour
 {   
     [SerializeField] private GameObject tutorialPanel;
     [SerializeField] private GameObject StartPanel;
+    [SerializeField] private GameObject GameOverPanel;
     [SerializeField] private GameObject PauseButton;
     [SerializeField] private GameObject PauseMenu;
     public void GameStart()
@@ -36,8 +37,9 @@ public class CanvasScript : MonoBehaviour
         PauseMenu.SetActive(false);
     }
     public void Restart()
-    {
-        SceneManager.LoadScene("Level");
+    {   
+        GameOverPanel.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void GameQuit()
     {
