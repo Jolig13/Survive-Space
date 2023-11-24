@@ -33,6 +33,7 @@ public class playerAttack : MonoBehaviour
         {           
             Instantiate(shootRayprefab,rayshootPoint1.position,Quaternion.identity);
             Instantiate(shootRayprefab,rayshootPoint2.position,Quaternion.identity);
+            AudioManager.AudioInstance.RaySound();
             yield return new WaitForSeconds(rayTimewait);
         }          
     }
@@ -41,6 +42,7 @@ public class playerAttack : MonoBehaviour
         for (int i = 0; i < Proyectilepool; i++)
         {           
             Instantiate(shootPrefab,shootPoint.position,Quaternion.identity);
+            AudioManager.AudioInstance.LaserSound();
             yield return new WaitForSeconds(timeWaitshoot);
         } 
     }

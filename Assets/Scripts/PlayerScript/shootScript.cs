@@ -22,6 +22,7 @@ public class shootScript : MonoBehaviour
             Destroy(collision.gameObject);   
             Destroy(this.gameObject);
             Instantiate(destroyFX,transform.position,Quaternion.identity);
+            AudioManager.AudioInstance.MeteorSound();
         }
         if (collision.gameObject.layer==LayerMask.NameToLayer("shootLimit"))
         {

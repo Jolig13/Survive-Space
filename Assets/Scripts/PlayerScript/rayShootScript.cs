@@ -23,11 +23,13 @@ public class rayShootScript : MonoBehaviour
         {
             Destroy(collider.gameObject);
             Instantiate(destroyFX,transform.position,Quaternion.identity);
+            AudioManager.AudioInstance.AsteroidSound();
         }
         if (collider.gameObject.CompareTag("Meteor"))
         {
             Destroy(collider.gameObject);
-             Instantiate(destroyFX,transform.position,Quaternion.identity);
+            Instantiate(destroyFX,transform.position,Quaternion.identity);
+            AudioManager.AudioInstance.MeteorSound();
         }
         if (collider.gameObject.layer==LayerMask.NameToLayer("shootLimit"))
         {
