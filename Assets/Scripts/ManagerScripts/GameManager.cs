@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text highScore;
     [SerializeField] private float ScrollSpeed;
     private float ScrollSpeedUp;
-    private float SpeedDivider=2.5f;
+    private float SpeedDivider=20f;
     private void Awake() 
     {
         if (Instance==null)
