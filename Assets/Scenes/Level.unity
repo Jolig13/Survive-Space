@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMove: 350
-  addSpeed: 150
+  addSpeed: 350
   timeSpeed: 5
   gameoverDelay: 0.5
   deathFX: {fileID: 6721498880942760054, guid: d6b38cb06e8f37d41b5497c3c639d760, type: 3}
@@ -629,7 +629,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207869e188d45054cb90544493377128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedCamera: 10
 --- !u!114 &375912376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,6 +643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actualScore: {fileID: 1213789405}
   highScore: {fileID: 902977831}
+  ScrollSpeed: 10
 --- !u!1 &421364674
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffPrefab: {fileID: 6415964363046876506, guid: 95667649020323e4eacf9cb1f8abb6b7, type: 3}
-  spawnTime: 20
+  spawnTime: 50
 --- !u!1 &429850125
 GameObject:
   m_ObjectHideFlags: 0

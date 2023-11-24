@@ -11,8 +11,12 @@ public class SpeedBuffScript : MonoBehaviour
         StartCoroutine(SpawnerSpeedUp());
     }
     IEnumerator SpawnerSpeedUp()
-    {            
-        GameObject gameObject= Instantiate(buffPrefab,transform.position,Quaternion.identity); 
-        yield return new WaitForSeconds(spawnTime);
+    {    
+        while(true)
+        {
+            Debug.Log("Objeto Instanciado");       
+            GameObject gameObject= Instantiate(buffPrefab,transform.position,Quaternion.identity); 
+            yield return new WaitForSeconds(spawnTime);
+        }
     }
 }
