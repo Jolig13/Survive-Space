@@ -190,7 +190,8 @@ MonoBehaviour:
     Good Luck in
     this unknown adventure.
 
-    Movement: W/A/S/D'
+
+    -Movement: W/S.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -532,6 +533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialPanel: {fileID: 1063798226}
   StartPanel: {fileID: 95367504}
+  GameOverPanel: {fileID: 0}
   PauseButton: {fileID: 0}
   PauseMenu: {fileID: 0}
 --- !u!1 &195800396

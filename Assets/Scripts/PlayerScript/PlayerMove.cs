@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class PlayerMove : MonoBehaviour
 {   
     [SerializeField] private float speedMove;
-    private float moveX;
     private float MoveY;
     private Rigidbody2D rb2d;
     [SerializeField] private float addSpeed;
@@ -23,9 +22,8 @@ public class PlayerMove : MonoBehaviour
     }
     private void Movement()
     {
-        moveX=Input.GetAxisRaw("Horizontal");
         MoveY=Input.GetAxisRaw("Vertical");
-        Vector2 playerMove=new Vector2(moveX,MoveY).normalized;
+        Vector2 playerMove=new Vector2(0f,MoveY).normalized;
         rb2d.velocity=playerMove*speedMove*Time.deltaTime;
         GameManager.Instance.Score();
     }
