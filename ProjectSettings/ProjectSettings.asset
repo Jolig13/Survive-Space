@@ -780,7 +780,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -800,10 +806,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 162165a0-e015-4ce9-a1e0-5aa52390dce2
+  cloudProjectId: 44b8f0a4-6de1-4f2c-ae9b-1375f6bb55eb
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Survive the Space 2023-11-20_11-21-07
+  projectName: Survive the Space
   organizationId: joel-galarza
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

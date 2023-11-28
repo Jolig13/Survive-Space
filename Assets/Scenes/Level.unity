@@ -646,7 +646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actualScore: {fileID: 1213789405}
   highScore: {fileID: 902977831}
-  ScrollSpeed: 10
+  ScrollSpeed: 5
 --- !u!82 &375912378
 AudioSource:
   m_ObjectHideFlags: 0
