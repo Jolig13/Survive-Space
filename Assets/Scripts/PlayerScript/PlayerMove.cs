@@ -32,6 +32,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.CompareTag("Meteor"))
         {
             Destroy(collision.gameObject);
+            AudioManager.AudioInstance.AsteroidSound();
             gameObject.SetActive(false);
             Instantiate(deathFX,transform.position,Quaternion.identity);
             Invoke("GameOver",gameoverDelay);
@@ -39,6 +40,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.CompareTag("Asteroid"))
         {
             Destroy(collision.gameObject);
+            AudioManager.AudioInstance.AsteroidSound();
             gameObject.SetActive(false);
             Instantiate(deathFX,transform.position,Quaternion.identity);
             Invoke("GameOver",gameoverDelay);
@@ -56,7 +58,7 @@ public class PlayerMove : MonoBehaviour
     {
         speedMove+=addSpeed;
         yield return new WaitForSeconds(timeSpeed);
-        speedMove+=addSpeed/timeSpeed;
+        speedMove+=addSpeed/(timeSpeed*2);
     }
     public void GameOver()
     {

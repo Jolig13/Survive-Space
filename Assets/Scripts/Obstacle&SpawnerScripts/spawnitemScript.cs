@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class spawnitemScript : MonoBehaviour
@@ -8,12 +7,14 @@ public class spawnitemScript : MonoBehaviour
     [SerializeField] private float spawnTime;
     [SerializeField] private float minWidthy;  
     [SerializeField] private float maxWidthy;
+    [SerializeField] private float waitForSpawn;
     private void Start()
     {
         StartCoroutine(Spawner());
     }
     IEnumerator Spawner()
     {
+        yield return new WaitForSeconds(waitForSpawn);
         while (true)
         {
             var buff=Random.Range(minWidthy,maxWidthy);

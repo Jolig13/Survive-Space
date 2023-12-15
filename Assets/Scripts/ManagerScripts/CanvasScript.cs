@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +8,7 @@ public class CanvasScript : MonoBehaviour
     [SerializeField] private GameObject GameOverPanel;
     [SerializeField] private GameObject PauseButton;
     [SerializeField] private GameObject PauseMenu;
+    [SerializeField] private GameObject CreditsPanel;
     public void GameStart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
@@ -22,6 +21,11 @@ public class CanvasScript : MonoBehaviour
     public void BackButton()
     {
         tutorialPanel.SetActive(false);
+        StartPanel.SetActive(true);
+    }
+    public void BackButtonCredits()
+    {
+        CreditsPanel.SetActive(false);
         StartPanel.SetActive(true);
     }
     public void Pause()
@@ -41,9 +45,18 @@ public class CanvasScript : MonoBehaviour
         GameOverPanel.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public void Credits()
+    {
+        CreditsPanel.SetActive(true);
+        StartPanel.SetActive(false);
+    }
     public void GameQuit()
     {
         Application.Quit();
-        Debug.Log("Close Game");
+        //Debug.Log("Close Game");
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 }
