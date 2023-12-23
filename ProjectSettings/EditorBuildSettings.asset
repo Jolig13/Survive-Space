@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: a423a34a938e7c54da2c128c559dba54
   - enabled: 1
+    path: Assets/Scenes/ShipSelection_Shop.unity
+    guid: 514b45241766ef1418f9fda030767acc
+  - enabled: 1
     path: Assets/Scenes/Level.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

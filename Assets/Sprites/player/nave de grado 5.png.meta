@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 825ee78df1ca5fe458fbe16dd4a51d3b
+guid: 9906a76f3dfe60a4aa985d2f86e0f012
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nave interplanetaria_0
+      name: nave de grado 5_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 256
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc3d6ee480e28244290279c9d6e5617f
-      internalID: -2018970445
+      spriteID: abf7f8d21874353488f7bfb2e553fc0c
+      internalID: 1410060045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nave interplanetaria_1
+      name: nave de grado 5_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 256
         y: 0
-        width: 64
-        height: 64
+        width: 256
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1669b6c44a778409d8da9eacadfb7f
-      internalID: 1250258061
+      spriteID: 4e09513ec79c36640bce78705f6b8f1e
+      internalID: 124127213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nave interplanetaria_2
+      name: nave de grado 5_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 512
         y: 0
-        width: 64
-        height: 64
+        width: 256
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fdc95a6a7e3d6a49adc3a3c9551b415
-      internalID: 869505975
+      spriteID: 8ac1012ef37fc2e4395824824932ee0a
+      internalID: -285770516
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nave interplanetaria_0: -2018970445
-      nave interplanetaria_1: 1250258061
-      nave interplanetaria_2: 869505975
+      nave de grado 5_0: 1410060045
+      nave de grado 5_1: 124127213
+      nave de grado 5_2: -285770516
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

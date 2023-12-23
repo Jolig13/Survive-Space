@@ -28,6 +28,10 @@ public class CanvasScript : MonoBehaviour
         CreditsPanel.SetActive(false);
         StartPanel.SetActive(true);
     }
+    public void BackShop()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
     public void Pause()
     {
         Time.timeScale=0f;
@@ -55,8 +59,16 @@ public class CanvasScript : MonoBehaviour
         Application.Quit();
         //Debug.Log("Close Game");
     }
+    public void ShopMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
+    }
     public void MainMenu()
     {
         SceneManager.LoadScene("StartScene");
+    }
+    public void ReturnPlayGame()
+    {
+        SceneManager.LoadScene("Level");
     }
 }

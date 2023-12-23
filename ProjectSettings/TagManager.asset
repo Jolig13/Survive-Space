@@ -9,6 +9,7 @@ TagManager:
   - Meteor
   - Asteroid
   - SpeedUp
+  - LimitMap
   layers:
   - Default
   - TransparentFX
