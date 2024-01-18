@@ -235,12 +235,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 1758057160679739911, guid: 9003b7a5a8cca424a9b177d6f09444c5, type: 3}
-  delayStart: 0.25
+  delayStart: 0.15
   delaySpawn: 0.75
   poolCoin: 10
   resetDrop: 10
-  maxWidth: 4
-  minWidth: -4
 --- !u!1 &130811395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2385162902717783836, guid: 56f43bbecb8f5104ea459204720f3915, type: 3}
@@ -474,7 +472,7 @@ MonoBehaviour:
   actualScore: {fileID: 1213789405}
   highScore: {fileID: 902977831}
   coinScore: {fileID: 785433100}
-  ScrollSpeed: 0.35
+  ScrollSpeed: 0.03
   GameOverPanel: {fileID: 130811395}
 --- !u!82 &375912378
 AudioSource:
@@ -991,6 +989,55 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.919468, y: 0.56123066}
   m_EdgeRadius: 0
+--- !u!1 &546496679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546496680}
+  - component: {fileID: 546496681}
+  m_Layer: 0
+  m_Name: CoinSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &546496680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546496679}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 964735801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &546496681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546496679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a69c15a0d16e94180b593c05876745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 1758057160679739911, guid: 9003b7a5a8cca424a9b177d6f09444c5, type: 3}
+  delayStart: 0.15
+  delaySpawn: 0.75
+  poolCoin: 10
+  resetDrop: 10
 --- !u!1 &549721239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1096,55 @@ MonoBehaviour:
   - {fileID: 516337825}
   - {fileID: 1556744989}
   shipIndex: 0
+--- !u!1 &590603131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590603132}
+  - component: {fileID: 590603133}
+  m_Layer: 0
+  m_Name: CoinSpawner (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590603132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590603131}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 964735801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &590603133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590603131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a69c15a0d16e94180b593c05876745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 1758057160679739911, guid: 9003b7a5a8cca424a9b177d6f09444c5, type: 3}
+  delayStart: 0.15
+  delaySpawn: 0.75
+  poolCoin: 10
+  resetDrop: 10
 --- !u!1001 &638504961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6916,6 +7012,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 36866678}
+  - {fileID: 546496680}
+  - {fileID: 590603132}
   m_Father: {fileID: 1492163022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &966852201

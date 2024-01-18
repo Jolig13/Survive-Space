@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private  TextMeshProUGUI coinScore;
     [SerializeField] private float ScrollSpeed;
     private float ScrollSpeedUp;
-    private float SpeedDivider = 60f;
+    private float SpeedDivider = 450f;
     [SerializeField] private GameObject GameOverPanel;
     public static int totalCoins;
     private void Awake()

@@ -9,8 +9,7 @@ public class SpawnerCoin : MonoBehaviour
     [SerializeField] private float delaySpawn;
     [SerializeField] private int poolCoin;
     [SerializeField] private float resetDrop;
-    [SerializeField] private float maxWidth;
-    [SerializeField] private float minWidth;
+
     private int coinSpawned=0;
 
     private void Start()
@@ -19,10 +18,8 @@ public class SpawnerCoin : MonoBehaviour
     }
     void CoinDrop()
     {   
-        {   
-            var coinSpawn= Random.Range(maxWidth,minWidth);
-            var positionDrop= new Vector2(transform.position.x, coinSpawn);
-            Instantiate(coinPrefab, positionDrop, Quaternion.identity);
+        { 
+            Instantiate(coinPrefab, transform.position, Quaternion.identity);
             coinSpawned++;
             if (coinSpawned>=poolCoin)
             {
