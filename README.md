@@ -9,3 +9,5 @@ First Unity Game
 -Sprites: ale07roldan@outlook.es & joelfgalarza97@gmail.com
 
 -Music&FX: created in www.beepbox.co
+
+-Test Game in Itch.io : https://jolig13.itch.io/survive-space
