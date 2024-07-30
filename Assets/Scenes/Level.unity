@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -174,6 +173,10 @@ PrefabInstance:
     - target: {fileID: 7777421622380537489, guid: 2aa12e730c41cea45a67b018f303e698, type: 3}
       propertyPath: m_Name
       value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777421622380537489, guid: 2aa12e730c41cea45a67b018f303e698, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -472,7 +475,7 @@ MonoBehaviour:
   actualScore: {fileID: 1213789405}
   highScore: {fileID: 902977831}
   coinScore: {fileID: 785433100}
-  ScrollSpeed: 0.03
+  ScrollSpeed: 0.015
   GameOverPanel: {fileID: 130811395}
 --- !u!82 &375912378
 AudioSource:
@@ -764,6 +767,10 @@ PrefabInstance:
     - target: {fileID: 1270444198755511176, guid: 8189a2680c326824f87ea80a26426112, type: 3}
       propertyPath: m_Name
       value: player4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270444198755511176, guid: 8189a2680c326824f87ea80a26426112, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7728974107281851130, guid: 8189a2680c326824f87ea80a26426112, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1156,6 +1163,10 @@ PrefabInstance:
     - target: {fileID: 1393406491869774105, guid: 8117478e049bd6b4b9e34278ba6edd51, type: 3}
       propertyPath: m_Name
       value: player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1393406491869774105, guid: 8117478e049bd6b4b9e34278ba6edd51, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6682330370943210389, guid: 8117478e049bd6b4b9e34278ba6edd51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2246,8 +2257,8 @@ ParticleSystem:
   autoRandomSeed: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 3
-    scalar: 5
+    minMaxState: 0
+    scalar: 0
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -2478,7 +2489,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.15
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5579,11 +5590,11 @@ ParticleSystem:
     range: {x: 0, y: 1}
     separateAxes: 0
   RotationBySpeedModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
+      minMaxState: 3
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -5635,8 +5646,8 @@ ParticleSystem:
         m_RotationOrder: 4
     y:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
+      minMaxState: 3
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -5688,9 +5699,9 @@ ParticleSystem:
         m_RotationOrder: 4
     curve:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0.7853982
-      minScalar: 0.7853982
+      minMaxState: 3
+      scalar: 6.283185
+      minScalar: -6.283185
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -8103,6 +8114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player5
       objectReference: {fileID: 0}
+    - target: {fileID: 4560945441653471721, guid: 4a0a16fc8ae1f9d4fb9606384e59502d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6346296660164382572, guid: 4a0a16fc8ae1f9d4fb9606384e59502d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8220,6 +8235,10 @@ PrefabInstance:
     - target: {fileID: 1089494892500460170, guid: bb802e759906db14f8860189afd1ddc4, type: 3}
       propertyPath: m_Name
       value: player3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089494892500460170, guid: bb802e759906db14f8860189afd1ddc4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1177501375830741076, guid: bb802e759906db14f8860189afd1ddc4, type: 3}
       propertyPath: m_LocalPosition.x

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7396574923525180814}
   - component: {fileID: 874066880512060793}
   - component: {fileID: -4249941344880052226}
-  - component: {fileID: 6936771064690621399}
   - component: {fileID: 8795421313678699094}
+  - component: {fileID: 1946020138820078379}
   m_Layer: 0
   m_Name: player2
   m_TagString: Player
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1224866605076735335}
@@ -161,8 +161,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &6936771064690621399
-PolygonCollider2D:
+--- !u!114 &8795421313678699094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393406491869774105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5fcd157ab19804fbfbb7c2df7b1b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMove: 350
+  deathFX: {fileID: 6721498880942760054, guid: d6b38cb06e8f37d41b5497c3c639d760, type: 3}
+--- !u!61 &1946020138820078379
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -193,64 +207,19 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.012115061, y: 0.0015143901}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 1.44}
+    oldSize: {x: 2, y: 1.125}
     newSize: {x: 2.56, y: 1.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.81, y: -0.089999996}
-      - {x: 0.95, y: -0.02}
-      - {x: 0.95, y: 0.02}
-      - {x: 0.52, y: 0.19}
-      - {x: 0.7728441, y: 0.3656882}
-      - {x: 0.77, y: 0.37}
-      - {x: 0.71999997, y: 0.39999998}
-      - {x: 0.53999996, y: 0.39999998}
-      - {x: 0.52541435, y: 0.4005508}
-      - {x: -0.13, y: 0.24}
-      - {x: -0.32, y: 0.17}
-      - {x: -0.51, y: 0.34}
-      - {x: -0.58, y: 0.32}
-      - {x: -0.56, y: 0.14999999}
-      - {x: -0.71999997, y: 0.08}
-      - {x: -0.71999997, y: -0.06}
-      - {x: -0.62, y: -0.14}
-      - {x: -0.53999996, y: -0.13}
-      - {x: -0.57, y: -0.29999998}
-      - {x: -0.55, y: -0.32999998}
-      - {x: -0.48, y: -0.31}
-      - {x: -0.32, y: -0.16}
-      - {x: -0.25, y: -0.19}
-      - {x: -0.13, y: -0.25}
-      - {x: 0.03, y: -0.29}
-      - {x: 0.29, y: -0.35}
-      - {x: 0.55, y: -0.39999998}
-      - {x: 0.74, y: -0.39999998}
-      - {x: 0.76, y: -0.35999998}
-      - {x: 0.75, y: -0.32999998}
-      - {x: 0.53, y: -0.19}
-  m_UseDelaunayMesh: 0
---- !u!114 &8795421313678699094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393406491869774105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce5fcd157ab19804fbfbb7c2df7b1b52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedMove: 350
-  deathFX: {fileID: 6721498880942760054, guid: d6b38cb06e8f37d41b5497c3c639d760, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.0065628, y: 0.40112343}
+  m_EdgeRadius: 0
 --- !u!1 &6086436963973579001
 GameObject:
   m_ObjectHideFlags: 0

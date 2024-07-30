@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     private float score;
     [SerializeField] private TMP_Text actualScore;
     [SerializeField] private TMP_Text highScore;
-    [SerializeField] private  TextMeshProUGUI coinScore;
+    [SerializeField] private TextMeshProUGUI coinScore;
     [SerializeField] private float ScrollSpeed;
     private float ScrollSpeedUp;
     private float SpeedDivider = 450f;
@@ -24,10 +24,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        
         totalCoins = PlayerPrefs.GetInt("totalCoins",0);
     }
     private void Update()
-    {
+    {   
         highScore.text = PlayerPrefs.GetInt("highScore", 0).ToString();
         coinScore.text = ":" + totalCoins.ToString();
         Score();

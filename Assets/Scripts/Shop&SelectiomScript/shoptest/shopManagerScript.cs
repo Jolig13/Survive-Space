@@ -29,10 +29,14 @@ public class shopManagerScript : MonoBehaviour
             ship.SetActive(false);
         }
         shipModels[shipIndex].SetActive(true);
+
+
+        //textCoin.text = ":" + GameManager.totalCoins.ToString();
     }
-    private void FixedUpdate()
+    private void Update()
     {
         UpdateUI();
+        textCoin.text = ":" + GameManager.totalCoins.ToString();
     }
     public void NextShip()
     {
@@ -78,7 +82,8 @@ public class shopManagerScript : MonoBehaviour
         PlayerPrefs.SetInt("totalCoins", PlayerPrefs.GetInt("totalCoins", 0) - ships.costShip);
     }
     private void UpdateUI()
-    {
+    {   
+        textCoin.text = ":" + GameManager.totalCoins.ToString();
         shipsData ships = dataShip[shipIndex];
         if (ships.isUnlocked)
         {
@@ -98,5 +103,7 @@ public class shopManagerScript : MonoBehaviour
                 unlockButton.interactable = false;
             }
         }
+
+        
     }
 }
